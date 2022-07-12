@@ -17,11 +17,11 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
 ### #Style 설정
 
 - styled-components의 createGlobalStyle를 활용하여 전역 css 적용 처리.
-- npm 모듈 github의 css를 사용하여 초기화 처리
+- npm 모듈 github의 css를 사용하여 초기화 처리  
   https://www.npmjs.com/package/styled-reset
 
-- 폰트 검색 및 삽입 코드 사이트
+- 폰트 검색 및 삽입 코드 사이트  
   https://fonts.google.com
 
-- 색상코드 팔레트 사이트
-  https://flatuicolors.com/
+- 색상코드 팔레트 사이트  
+  https://flatuicolors.com
