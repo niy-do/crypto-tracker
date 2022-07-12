@@ -38,5 +38,5 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
 1. React-Router-Dom 버전 (6.3.0 사용)
 
 - Link 사용 시 state 전달하는 방식이 바뀜.  
-  \* 6버전 미만 : ` <Link to={{pathname:``uri``, state:{propName:value}}} ></Link> `  
-  \* 6버전 이상 : ` <Link to=``uri`` state={{propName:value}} ></Link>`
+  \* 6버전 미만 : `<Link to={{pathname:&#96;uri&#96;, state:{propName:value}}} ></Link>`  
+  \* 6버전 이상 : ` <Link to=&#96;uri&#96; state={{propName:value}} ></Link>`
