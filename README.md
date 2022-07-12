@@ -37,9 +37,16 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
 
 1. React-Router-Dom 버전 (6.3.0 사용)
 
-- Router 5버전과 6버전 간 차이 점 확인 사이트  
-  https://blog.woolta.com/categories/1/posts/211
+- Router 5버전과 6버전 간 차이 점 확인 사이트
 
-* Link 사용 시 state 전달하는 방식이 바뀜.  
+  - https://blog.woolta.com/categories/1/posts/211
+  - https://velog.io/@peacesong/react-router-v6
+  - https://unho94.tistory.com/55
+
+- Link 사용 시 state 전달하는 방식이 바뀜.  
   \* 6버전 미만 : `<Link to={{pathname:uri, state:{propName:value}}} ></Link>`  
   \* 6버전 이상 : `<Link to=uri state={{propName:value}} ></Link>`
+
+- URL match에 사용하는 hook 바뀜.  
+  \* v5 : useRouteMatch() => 매치되면 Object 반환, 아닌 경우 null 반환  
+  \* v6 : useMatch() => true/false
