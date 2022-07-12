@@ -25,3 +25,18 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
 
 - 색상코드 팔레트 사이트  
   https://flatuicolors.com
+
+### 샘플 프로젝트 생성 시 사용한 API 목록 및 사이트
+
+1. 코인관련 API 정보 사이트  
+   https://api.coinpaprika.com/
+2. 코인 이미지 Link 사이트  
+   https://coinicons-api.vercel.app/
+
+## 강의와 다르게 변경된 사항
+
+1. React-Router-Dom 버전 (6.3.0 사용)
+
+- Link 사용 시 state 전달하는 방식이 바뀜.  
+  \* 6버전 미만 : ` <Link to={{pathname:``uri``, state:{propName:value}}} ></Link> `  
+  \* 6버전 이상 : ` <Link to=``uri`` state={{propName:value}} ></Link>`
