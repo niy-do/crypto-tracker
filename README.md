@@ -10,9 +10,19 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
 2. React Router Dom  
    `npm i react-router-dom`  
    `npm i --save-dev @types/react-router-dom`
+
    - React-Router-Dom v6 부터 Switch를 지원하지 않게됨.
      (강의 상은 버전 5.3.0 기준임.)
      https://velog.io/@kcdoggo/Switch-is-not-exported-from-react-router-dom-%EC%97%90%EB%9F%AC
+
+3. React-Query  
+   `npm i react-query`
+   - 참고문헌
+     - https://mingule.tistory.com/74
+     - https://fe-developers.kakaoent.com/2022/220224-data-fetching-libs/
+     - https://blog.hyunmin.dev/23
+     - https://tech.kakaopay.com/post/react-query-1/
+     - https://techblog.woowahan.com/6339/
 
 ### #Style 설정
 
@@ -43,10 +53,12 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
   - https://velog.io/@peacesong/react-router-v6
   - https://unho94.tistory.com/55
 
-- Link 사용 시 state 전달하는 방식이 바뀜.  
-  \* 6버전 미만 : `<Link to={{pathname:uri, state:{propName:value}}} ></Link>`  
-  \* 6버전 이상 : `<Link to=uri state={{propName:value}} ></Link>`
+- Link 사용 시 state 전달하는 방식이 바뀜.
 
-- URL match에 사용하는 hook 바뀜.  
-  \* v5 : useRouteMatch() => 매치되면 Object 반환, 아닌 경우 null 반환  
-  \* v6 : useMatch() => true/false
+  - v5 : `<Link to={{pathname:uri, state:{propName:value}}} ></Link>`
+  - v6 : `<Link to=uri state={{propName:value}} ></Link>`
+
+- URL match에 사용하는 hook 바뀜.
+
+  - v5 : useRouteMatch()
+  - v6 : useMatch()
