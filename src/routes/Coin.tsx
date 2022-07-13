@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useQuery } from "react-query";
 import {
   Link,
@@ -162,6 +163,11 @@ function Coin() {
 
   return (
     <Container>
+      <Helmet>
+        <title>
+          {state?.name ? state.name : loading ? "Loading..." : coinData?.name}
+        </title>
+      </Helmet>
       <Header>
         <Title>
           {state?.name ? state.name : loading ? "Loading..." : coinData?.name}
