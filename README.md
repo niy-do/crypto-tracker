@@ -17,12 +17,19 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
 
 3. React-Query  
    `npm i react-query`
+
    - 참고문헌
      - https://mingule.tistory.com/74
      - https://fe-developers.kakaoent.com/2022/220224-data-fetching-libs/
      - https://blog.hyunmin.dev/23
      - https://tech.kakaopay.com/post/react-query-1/
      - https://techblog.woowahan.com/6339/
+
+4. apexcharts (차트 그리기 모듈)  
+   ``
+
+   - 사이트 주소 : https://apexcharts.com
+   - 설치 방법 및 Docs : https://apexcharts.com/docs/react-charts/
 
 ### #Style 설정
 

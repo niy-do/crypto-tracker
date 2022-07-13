@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import {
   Link,
@@ -151,8 +150,12 @@ function Coin() {
   );
 
   const { isLoading: isCoinTickerDataLoading, data: tickerData } =
-    useQuery<ITickerData>(["coinTicker", coinId], () =>
-      fetchCoinTickerData(coinId as string)
+    useQuery<ITickerData>(
+      ["coinTicker", coinId],
+      () => fetchCoinTickerData(coinId as string),
+      {
+        refetchInterval: 5000,
+      }
     );
 
   const loading = isCoinDataLoading || isCoinTickerDataLoading;
@@ -178,8 +181,8 @@ function Coin() {
               <span>${coinData?.symbol}</span>
             </OverviewItem>
             <OverviewItem>
-              <span>Open Source:</span>
-              <span>{coinData?.open_source ? "Yes" : "No"}</span>
+              <span>Price:</span>
+              <span>{tickerData?.quotes.USD.price.toFixed(2)}</span>
             </OverviewItem>
           </Overview>
           <Description>{coinData?.description}</Description>
@@ -196,14 +199,18 @@ function Coin() {
 
           <Tabs>
             <Tab isActive={chartMatch !== null}>
-              <Link to={`/${coinId}/chart`}>Chart</Link>
+              <Link to={`/${coinId}/chart`} replace={true}>
+                Chart
+              </Link>
             </Tab>
             <Tab isActive={priceMatch !== null}>
-              <Link to={`/${coinId}/price`}>Price</Link>
+              <Link to={`/${coinId}/price`} replace={true}>
+                Price
+              </Link>
             </Tab>
           </Tabs>
 
-          <Outlet />
+          <Outlet context={{ coinId }} />
         </>
       )}
     </Container>
