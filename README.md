@@ -31,11 +31,16 @@ Nomad Coder의 강의 React마스터 클래스 강의 실습 프로젝트
    - 사이트 주소 : https://apexcharts.com
    - 설치 방법 및 Docs : https://apexcharts.com/docs/react-charts/
 
-5. React Helmet
+5. React Helmet  
    `npm i react-helmet`  
    `npm i --save-dev @types/react-helmet`
 
    - https://www.npmjs.com/package/react-helmet
+
+6. Recoil  
+   `npm i recoil`
+
+   - https://recoiljs.org/ko/
 
 ### #Style 설정
 
